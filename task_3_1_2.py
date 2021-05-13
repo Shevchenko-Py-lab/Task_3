@@ -6,8 +6,7 @@ def num_translate_adv():
             translate = word_number.get(word_to_translate, 'Слова нет в словаре')
             print(translate)
         else:
-            word_to_translate = word_to_translate.replace(chr(ord((word_to_translate[0]))),
-                                                          chr(ord(word_to_translate[0]) + 32))
+            word_to_translate = str.lower(word_to_translate)
             translate = word_number.get(word_to_translate, 'Слова нет в словаре')
             print(translate.capitalize())
 
